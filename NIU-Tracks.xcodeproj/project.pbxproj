@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65523FCE2A35F618006BDCC4 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65523FCD2A35F618006BDCC4 /* Bundle.swift */; };
+		65523FD02A35FFC0006BDCC4 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65523FCF2A35FFC0006BDCC4 /* FilterView.swift */; };
+		65523FD22A360120006BDCC4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65523FD12A360120006BDCC4 /* Date.swift */; };
+		65523FD42A365F9D006BDCC4 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65523FD32A365F9D006BDCC4 /* FilterViewModel.swift */; };
+		65523FD62A36E6B4006BDCC4 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65523FD52A36E6B4006BDCC4 /* Filter.swift */; };
+		65523FD82A3BC0FD006BDCC4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 65523FD72A3BC0FD006BDCC4 /* LICENSE */; };
+		65523FF32A3DE770006BDCC4 /* MainViewSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65523FF22A3DE770006BDCC4 /* MainViewSheets.swift */; };
+		658FCA4A2A247FD1005584C3 /* NIU_TracksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA492A247FD1005584C3 /* NIU_TracksApp.swift */; };
+		658FCA4C2A247FD1005584C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA4B2A247FD1005584C3 /* MainView.swift */; };
+		658FCA4E2A247FD2005584C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658FCA4D2A247FD2005584C3 /* Assets.xcassets */; };
+		658FCA512A247FD2005584C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658FCA502A247FD2005584C3 /* Preview Assets.xcassets */; };
+		658FCA562A247FD2005584C3 /* NIU_Tracks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA542A247FD2005584C3 /* NIU_Tracks.xcdatamodeld */; };
+		658FCA5F2A248017005584C3 /* NiuAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 658FCA5E2A248017005584C3 /* NiuAPI */; };
+		658FCA652A24808A005584C3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA642A24808A005584C3 /* UserDefaults.swift */; };
+		658FCA672A2480EF005584C3 /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA662A2480EF005584C3 /* MapViewRepresentable.swift */; };
+		658FCA692A24812D005584C3 /* ScooterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA682A24812D005584C3 /* ScooterCoordinator.swift */; };
+		658FCA6B2A29001E005584C3 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA6A2A29001E005584C3 /* Driver.swift */; };
+		658FCA6E2A293547005584C3 /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA6D2A293547005584C3 /* NSManagedObjectContext.swift */; };
+		658FCA702A293552005584C3 /* ContextSaveContextualInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA6F2A293552005584C3 /* ContextSaveContextualInfo.swift */; };
+		658FCA722A293556005584C3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA712A293556005584C3 /* CoreDataStack.swift */; };
+		658FCA752A29967A005584C3 /* CDTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA742A29967A005584C3 /* CDTrack.swift */; };
+		658FCA772A29968F005584C3 /* CDTrackPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA762A29968F005584C3 /* CDTrackPoint.swift */; };
+		658FCA7B2A2B6633005584C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA7A2A2B6633005584C3 /* LoginView.swift */; };
+		658FCA7D2A2B6BEB005584C3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA7C2A2B6BEB005584C3 /* LoginViewModel.swift */; };
+		658FCA7F2A2B8288005584C3 /* TracksTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA7E2A2B8288005584C3 /* TracksTable.swift */; };
+		658FCA812A2BD104005584C3 /* VehiclePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA802A2BD104005584C3 /* VehiclePickerView.swift */; };
+		658FCA832A2BD19A005584C3 /* VehiclePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FCA822A2BD199005584C3 /* VehiclePickerViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		651A7D682A307C6F00438AEA /* NextVersion.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NextVersion.md; sourceTree = "<group>"; };
+		651A7D692A307DE000438AEA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		65523FCD2A35F618006BDCC4 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		65523FCF2A35FFC0006BDCC4 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		65523FD12A360120006BDCC4 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		65523FD32A365F9D006BDCC4 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		65523FD52A36E6B4006BDCC4 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		65523FD72A3BC0FD006BDCC4 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		65523FDA2A3BC4C8006BDCC4 /* trackList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackList.png; sourceTree = "<group>"; };
+		65523FDB2A3BC4C8006BDCC4 /* trackMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackMap.png; sourceTree = "<group>"; };
+		65523FDC2A3BC4C8006BDCC4 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		65523FDD2A3BC4C8006BDCC4 /* vehiclePicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vehiclePicker.png; sourceTree = "<group>"; };
+		65523FDE2A3BC670006BDCC4 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		65523FF22A3DE770006BDCC4 /* MainViewSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSheets.swift; sourceTree = "<group>"; };
+		658FCA462A247FD1005584C3 /* NIU-Tracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIU-Tracks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		658FCA492A247FD1005584C3 /* NIU_TracksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIU_TracksApp.swift; sourceTree = "<group>"; };
+		658FCA4B2A247FD1005584C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		658FCA4D2A247FD2005584C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		658FCA502A247FD2005584C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		658FCA552A247FD2005584C3 /* NIU_Tracks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NIU_Tracks.xcdatamodel; sourceTree = "<group>"; };
+		658FCA572A247FD2005584C3 /* NIU_Tracks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NIU_Tracks.entitlements; sourceTree = "<group>"; };
+		658FCA642A24808A005584C3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		658FCA662A2480EF005584C3 /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
+		658FCA682A24812D005584C3 /* ScooterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScooterCoordinator.swift; sourceTree = "<group>"; };
+		658FCA6A2A29001E005584C3 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		658FCA6D2A293547005584C3 /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
+		658FCA6F2A293552005584C3 /* ContextSaveContextualInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextSaveContextualInfo.swift; sourceTree = "<group>"; };
+		658FCA712A293556005584C3 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		658FCA742A29967A005584C3 /* CDTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDTrack.swift; sourceTree = "<group>"; };
+		658FCA762A29968F005584C3 /* CDTrackPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDTrackPoint.swift; sourceTree = "<group>"; };
+		658FCA7A2A2B6633005584C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		658FCA7C2A2B6BEB005584C3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		658FCA7E2A2B8288005584C3 /* TracksTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTable.swift; sourceTree = "<group>"; };
+		658FCA802A2BD104005584C3 /* VehiclePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePickerView.swift; sourceTree = "<group>"; };
+		658FCA822A2BD199005584C3 /* VehiclePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePickerViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		658FCA432A247FD1005584C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658FCA5F2A248017005584C3 /* NiuAPI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65523FD92A3BC4C8006BDCC4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				65523FDE2A3BC670006BDCC4 /* login.png */,
+				65523FDD2A3BC4C8006BDCC4 /* vehiclePicker.png */,
+				65523FDB2A3BC4C8006BDCC4 /* trackMap.png */,
+				65523FDA2A3BC4C8006BDCC4 /* trackList.png */,
+				65523FDC2A3BC4C8006BDCC4 /* filter.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		658FCA3D2A247FD1005584C3 = {
+			isa = PBXGroup;
+			children = (
+				651A7D682A307C6F00438AEA /* NextVersion.md */,
+				651A7D692A307DE000438AEA /* README.md */,
+				65523FD92A3BC4C8006BDCC4 /* images */,
+				65523FD72A3BC0FD006BDCC4 /* LICENSE */,
+				658FCA482A247FD1005584C3 /* NIU-Tracks */,
+				658FCA472A247FD1005584C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		658FCA472A247FD1005584C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				658FCA462A247FD1005584C3 /* NIU-Tracks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		658FCA482A247FD1005584C3 /* NIU-Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				658FCA492A247FD1005584C3 /* NIU_TracksApp.swift */,
+				658FCA632A248081005584C3 /* Extensions */,
+				658FCA622A24805A005584C3 /* Models */,
+				658FCA612A248052005584C3 /* ViewModels */,
+				658FCA602A24803E005584C3 /* Views */,
+				658FCA6C2A293532005584C3 /* CoreData */,
+				658FCA4D2A247FD2005584C3 /* Assets.xcassets */,
+				658FCA572A247FD2005584C3 /* NIU_Tracks.entitlements */,
+				658FCA542A247FD2005584C3 /* NIU_Tracks.xcdatamodeld */,
+				658FCA4F2A247FD2005584C3 /* Preview Content */,
+			);
+			path = "NIU-Tracks";
+			sourceTree = "<group>";
+		};
+		658FCA4F2A247FD2005584C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				658FCA502A247FD2005584C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		658FCA602A24803E005584C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65523FCF2A35FFC0006BDCC4 /* FilterView.swift */,
+				658FCA7A2A2B6633005584C3 /* LoginView.swift */,
+				658FCA4B2A247FD1005584C3 /* MainView.swift */,
+				658FCA662A2480EF005584C3 /* MapViewRepresentable.swift */,
+				658FCA7E2A2B8288005584C3 /* TracksTable.swift */,
+				658FCA802A2BD104005584C3 /* VehiclePickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		658FCA612A248052005584C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				65523FD32A365F9D006BDCC4 /* FilterViewModel.swift */,
+				658FCA7C2A2B6BEB005584C3 /* LoginViewModel.swift */,
+				658FCA682A24812D005584C3 /* ScooterCoordinator.swift */,
+				658FCA822A2BD199005584C3 /* VehiclePickerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		658FCA622A24805A005584C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				658FCA6A2A29001E005584C3 /* Driver.swift */,
+				65523FD52A36E6B4006BDCC4 /* Filter.swift */,
+				65523FF22A3DE770006BDCC4 /* MainViewSheets.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		658FCA632A248081005584C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				65523FCD2A35F618006BDCC4 /* Bundle.swift */,
+				65523FD12A360120006BDCC4 /* Date.swift */,
+				658FCA642A24808A005584C3 /* UserDefaults.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		658FCA6C2A293532005584C3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				658FCA732A29355B005584C3 /* Extensions */,
+				658FCA712A293556005584C3 /* CoreDataStack.swift */,
+				658FCA6F2A293552005584C3 /* ContextSaveContextualInfo.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		658FCA732A29355B005584C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				658FCA6D2A293547005584C3 /* NSManagedObjectContext.swift */,
+				658FCA742A29967A005584C3 /* CDTrack.swift */,
+				658FCA762A29968F005584C3 /* CDTrackPoint.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		658FCA452A247FD1005584C3 /* NIU-Tracks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 658FCA5A2A247FD2005584C3 /* Build configuration list for PBXNativeTarget "NIU-Tracks" */;
+			buildPhases = (
+				658FCA422A247FD1005584C3 /* Sources */,
+				658FCA432A247FD1005584C3 /* Frameworks */,
+				658FCA442A247FD1005584C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NIU-Tracks";
+			packageProductDependencies = (
+				658FCA5E2A248017005584C3 /* NiuAPI */,
+			);
+			productName = "NIU-Tracks";
+			productReference = 658FCA462A247FD1005584C3 /* NIU-Tracks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		658FCA3E2A247FD1005584C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					658FCA452A247FD1005584C3 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 658FCA412A247FD1005584C3 /* Build configuration list for PBXProject "NIU-Tracks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 658FCA3D2A247FD1005584C3;
+			packageReferences = (
+				658FCA5D2A248017005584C3 /* XCRemoteSwiftPackageReference "NiuAPI" */,
+			);
+			productRefGroup = 658FCA472A247FD1005584C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				658FCA452A247FD1005584C3 /* NIU-Tracks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		658FCA442A247FD1005584C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65523FD82A3BC0FD006BDCC4 /* LICENSE in Resources */,
+				658FCA512A247FD2005584C3 /* Preview Assets.xcassets in Resources */,
+				658FCA4E2A247FD2005584C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		658FCA422A247FD1005584C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658FCA652A24808A005584C3 /* UserDefaults.swift in Sources */,
+				65523FCE2A35F618006BDCC4 /* Bundle.swift in Sources */,
+				658FCA752A29967A005584C3 /* CDTrack.swift in Sources */,
+				65523FF32A3DE770006BDCC4 /* MainViewSheets.swift in Sources */,
+				658FCA772A29968F005584C3 /* CDTrackPoint.swift in Sources */,
+				658FCA6E2A293547005584C3 /* NSManagedObjectContext.swift in Sources */,
+				658FCA702A293552005584C3 /* ContextSaveContextualInfo.swift in Sources */,
+				658FCA4C2A247FD1005584C3 /* MainView.swift in Sources */,
+				65523FD42A365F9D006BDCC4 /* FilterViewModel.swift in Sources */,
+				658FCA7F2A2B8288005584C3 /* TracksTable.swift in Sources */,
+				658FCA7D2A2B6BEB005584C3 /* LoginViewModel.swift in Sources */,
+				658FCA6B2A29001E005584C3 /* Driver.swift in Sources */,
+				658FCA722A293556005584C3 /* CoreDataStack.swift in Sources */,
+				65523FD22A360120006BDCC4 /* Date.swift in Sources */,
+				65523FD62A36E6B4006BDCC4 /* Filter.swift in Sources */,
+				658FCA812A2BD104005584C3 /* VehiclePickerView.swift in Sources */,
+				658FCA562A247FD2005584C3 /* NIU_Tracks.xcdatamodeld in Sources */,
+				658FCA672A2480EF005584C3 /* MapViewRepresentable.swift in Sources */,
+				658FCA7B2A2B6633005584C3 /* LoginView.swift in Sources */,
+				658FCA832A2BD19A005584C3 /* VehiclePickerViewModel.swift in Sources */,
+				65523FD02A35FFC0006BDCC4 /* FilterView.swift in Sources */,
+				658FCA4A2A247FD1005584C3 /* NIU_TracksApp.swift in Sources */,
+				658FCA692A24812D005584C3 /* ScooterCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		658FCA582A247FD2005584C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		658FCA592A247FD2005584C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		658FCA5B2A247FD2005584C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NIU-Tracks/NIU_Tracks.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NIU-Tracks/Preview Content\"";
+				DEVELOPMENT_TEAM = 258C524YRU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2023, Andre Albach";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.aaindustries.NIU-Tracks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		658FCA5C2A247FD2005584C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "NIU-Tracks/NIU_Tracks.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NIU-Tracks/Preview Content\"";
+				DEVELOPMENT_TEAM = 258C524YRU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2023, Andre Albach";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.aaindustries.NIU-Tracks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		658FCA412A247FD1005584C3 /* Build configuration list for PBXProject "NIU-Tracks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658FCA582A247FD2005584C3 /* Debug */,
+				658FCA592A247FD2005584C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		658FCA5A2A247FD2005584C3 /* Build configuration list for PBXNativeTarget "NIU-Tracks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658FCA5B2A247FD2005584C3 /* Debug */,
+				658FCA5C2A247FD2005584C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		658FCA5D2A248017005584C3 /* XCRemoteSwiftPackageReference "NiuAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andre0707/NiuAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		658FCA5E2A248017005584C3 /* NiuAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658FCA5D2A248017005584C3 /* XCRemoteSwiftPackageReference "NiuAPI" */;
+			productName = NiuAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		658FCA542A247FD2005584C3 /* NIU_Tracks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				658FCA552A247FD2005584C3 /* NIU_Tracks.xcdatamodel */,
+			);
+			currentVersion = 658FCA552A247FD2005584C3 /* NIU_Tracks.xcdatamodel */;
+			path = NIU_Tracks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 658FCA3E2A247FD1005584C3 /* Project object */;
+}

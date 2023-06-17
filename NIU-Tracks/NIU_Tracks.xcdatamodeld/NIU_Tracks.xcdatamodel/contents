@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F66" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDTrack" representedClassName="CDTrack" syncable="YES" codeGenerationType="class">
+        <attribute name="averageSpeed" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="distance" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="driver_" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="endPointLatitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="endPointLongitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="endTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="powerConsumption" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ridingTime" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="scooterSerialNumber" optional="YES" attributeType="String"/>
+        <attribute name="startPointLatitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="startPointLongitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="startTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="trackId" attributeType="String"/>
+        <attribute name="trackThumbnail" optional="YES" attributeType="String"/>
+        <relationship name="trackPoints_" toMany="YES" deletionRule="Cascade" destinationEntity="CDTrackPoint" inverseName="parent" inverseEntity="CDTrackPoint"/>
+    </entity>
+    <entity name="CDTrackPoint" representedClassName="CDTrackPoint" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="speed" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="parent" maxCount="1" deletionRule="Nullify" destinationEntity="CDTrack" inverseName="trackPoints_" inverseEntity="CDTrack"/>
+    </entity>
+</model>
