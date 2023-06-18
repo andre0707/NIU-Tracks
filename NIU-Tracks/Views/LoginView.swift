@@ -88,6 +88,15 @@ struct LoginView: View {
             .padding(.horizontal)
         }
         .padding(.vertical)
+     
+        
+        // MARK: - Alert
+        
+        .alert(loginViewModel.alertMessage, isPresented: $loginViewModel.presentMessageAlert, actions: {
+            Button("OK") {
+                loginViewModel.presentMessageAlert = false
+            }
+        })
     }
 }
 

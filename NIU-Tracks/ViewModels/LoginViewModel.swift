@@ -8,6 +8,10 @@
 import AppKit
 import Foundation
 import NiuAPI
+import os
+
+/// A logger to log errors
+fileprivate let logger = Logger(subsystem: Bundle.main.bundleIdentifier, category: "LoginViewModel")
 
 /// The login view model
 @MainActor
@@ -31,6 +35,24 @@ final class LoginViewModel: ObservableObject {
     /// The stored access token, if there is one
     @Published var accessToken: String = UserDefaults.standard.accessToken ?? ""
     
+    /// Indicator, if the alert which shows a message sould be displayed
+    @Published var presentMessageAlert: Bool = false {
+        didSet {
+            if !presentMessageAlert {
+                alertMessage = ""
+            }
+        }
+    }
+    /// The message displayed in the alert
+    @Published private(set) var alertMessage: String = "" {
+        didSet {
+            guard !alertMessage.isEmpty else { return }
+            presentMessageAlert = true
+        }
+    }
+    
+    
+    // MARK: - User intends
     
     /// Will do the login with the provided data
     func login() async -> Bool {
@@ -43,9 +65,12 @@ final class LoginViewModel: ObservableObject {
             return true
         } catch {
             if let error = error as? NiuAPI.Errors {
-                print(error.description)
+                logger.error("\(error.description, privacy: .public)")
             } else {
-                print(error.localizedDescription)
+                logger.error("\(error.localizedDescription, privacy: .public)")
+            }
+            DispatchQueue.main.async {
+                self.alertMessage = String(localized: "There was an error with your login. Please check account and password.")
             }
             return false
         }
