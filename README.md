@@ -8,9 +8,11 @@ Here is a picture of the login form:
 ![Login](./images/login.png)
 
 If you registered with your phone number +491711234567, the login should look like this 
+```
 Coutry code: 49
 Account: 1711234567
 Password: mySuperSecretPassword
+```
 Click *Login* to login. This will automatically create an access token and fill the *Access token* field. The window should also automatically close.
 
 
