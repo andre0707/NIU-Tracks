@@ -36,6 +36,9 @@ extension UserDefaults {
         static let filterMinimumRidingTime = "filterMinimumRidingTime"
         static let filterIsMaximumRidingTimeActive = "filterIsMaximumRidingTimeActive"
         static let filterMaximumRidingTime = "filterMaximumRidingTime"
+        
+        /// View states
+        static let lastAppState = "lastAppState"
     }
     
     // MARK: - Account settings

@@ -23,13 +23,13 @@ struct MainView: View {
         
         var description: String {
             switch self {
-            case .map: return "Map"
-            case .table: return "Table"
+            case .map: return String(localized: "Map")
+            case .table: return String(localized: "Table")
             }
         }
     }
     /// The current app state. Saved in user defaults
-    @AppStorage("lastAppState") private var appState: AppStates = .map
+    @AppStorage(UserDefaults.Keys.lastAppState) private var appState: AppStates = .map
     
     /// The body
     var body: some View {

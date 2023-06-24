@@ -96,7 +96,7 @@ final class ScooterCoordinator: ObservableObject {
         guard let scooterSerialNumber = UserDefaults.standard.scooterSerialNumber,
               let accessToken = UserDefaults.standard.accessToken
         else {
-            let message = "Could not read tracks from API. Serial number of scooter or access token is not set."
+            let message = String(localized: "Could not read tracks from API. Serial number of scooter or access token is not set.")
             logger.error("\(message, privacy: .public)")
             DispatchQueue.main.async {
                 self.alertMessage = message
@@ -118,9 +118,9 @@ final class ScooterCoordinator: ObservableObject {
             DispatchQueue.main.async {
                 let message: String
                 if counterTotalAddedTracks > 0 {
-                    message = "Read \(counterTotalAddedTracks) tracks from the API and stored them to the database."
+                    message = String(localized: "Read \(counterTotalAddedTracks) tracks from the API and stored them to the database.")
                 } else {
-                    message = "There were no new tracks available on the API."
+                    message = String(localized: "There were no new tracks available on the API.")
                 }
                 
                 if self.alertMessage.isEmpty {
@@ -156,7 +156,7 @@ final class ScooterCoordinator: ObservableObject {
                     idsOfExistingTracks = []
                     logger.error("Error fetching existing tracks from database")
                     DispatchQueue.main.async {
-                        self.alertMessage = "Error fetching existing tracks from database"
+                        self.alertMessage = String(localized: "Error fetching existing tracks from database")
                     }
                 }
                                 
@@ -200,7 +200,7 @@ final class ScooterCoordinator: ObservableObject {
                         }
                         
                         DispatchQueue.main.async {
-                            self.alertMessage = "Error reading details to track."
+                            self.alertMessage = String(localized: "Error reading details to track.")
                         }
                     }
                 }
