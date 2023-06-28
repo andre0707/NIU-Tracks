@@ -101,9 +101,10 @@ struct MapViewRepresentable: NSViewRepresentable {
     final class MapViewCoordinator: NSObject, MKMapViewDelegate {
         
         /// Reference to the lab adventure coordinator which does the processing and handles interactions
-        let scooterCoordinator: ScooterCoordinator
+        private let scooterCoordinator: ScooterCoordinator
         
-        let lineWidth: CGFloat = 1
+        /// The width of the lines which represent the routes
+        private let lineWidth: CGFloat = 1
         
         /// Init function
         /// - Parameter mapDataViewModel: map view model to use
