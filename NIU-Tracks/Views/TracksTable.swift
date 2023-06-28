@@ -50,7 +50,7 @@ struct TracksTable: View {
             .width(ideal: 100)
             
             TableColumn("Distance") { track in
-                Text(verbatim: TracksTable.measurementFormatter.string(from: Measurement(value: Double(track.distance), unit: UnitLength.meters)))
+                Text(verbatim: TracksTable.measurementFormatter.string(from: track.distanceMeasurement))
             }
             .width(ideal: 80)
             
@@ -60,7 +60,7 @@ struct TracksTable: View {
             .width(ideal: 80)
             
             TableColumn("Average speed") { track in
-                Text(verbatim: TracksTable.measurementFormatter.string(from: Measurement(value: track.averageSpeed, unit: UnitSpeed.kilometersPerHour)))
+                Text(verbatim: TracksTable.measurementFormatter.string(from: track.averageSpeedMeasurement))
             }
             .width(ideal: 100)
             

@@ -40,6 +40,22 @@ extension CDTrack {
 }
 
 
+// MARK: - Measurements
+
+extension CDTrack {
+    
+    /// The distance as a measurement object
+    var distanceMeasurement: Measurement<UnitLength> {
+        Measurement(value: Double(distance), unit: UnitLength.meters)
+    }
+    
+    /// The average speed as a measurement object
+    var averageSpeedMeasurement: Measurement<UnitSpeed> {
+        Measurement(value: averageSpeed, unit: UnitSpeed.kilometersPerHour)
+    }
+}
+
+
 // MARK: - Helper variables
 
 extension CDTrack {
