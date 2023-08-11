@@ -217,6 +217,7 @@ final class ScooterCoordinator: ObservableObject {
                         self.alertMessage = error.localizedDescription
                     }
                 }
+                return
             }
         }
     }
