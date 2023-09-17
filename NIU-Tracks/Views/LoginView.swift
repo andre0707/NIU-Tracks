@@ -35,10 +35,12 @@ struct LoginView: View {
                     HStack {
                         Text("Account:")
                         TextField("Account (email, phone, username)", text: $loginViewModel.account)
+                            .textContentType(.username)
                     }
                     HStack {
                         Text("Password:")
                         SecureField("Password", text: $loginViewModel.password)
+                            .textContentType(.password)
                     }
                     
                     HStack {
