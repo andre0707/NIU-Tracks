@@ -29,6 +29,7 @@ struct MapViewRepresentable: NSViewRepresentable {
         mapView.showsBuildings = false
         mapView.showsTraffic = false
         mapView.showsCompass = true
+        mapView.showsZoomControls = true
         
         mapView.showsUserLocation = true
         
