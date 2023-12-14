@@ -13,6 +13,7 @@ struct FilterView: View {
     /// Reference to the view model which drives the view
     @ObservedObject var filterViewModel: FilterViewModel
     
+    /// Dismiss action
     @Environment(\.dismiss) private var dismiss
     
     /// The body
