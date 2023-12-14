@@ -41,7 +41,8 @@ struct NIU_TracksApp: App {
                 Divider()
                 
                 Button("Filter") {
-                    scooterCoordinator.presentFilter = true
+//                    scooterCoordinator.presentFilter = true
+                    scooterCoordinator.presentedSheet = .filter
                 }
                 .keyboardShortcut("F", modifiers: .command)
                 

@@ -23,12 +23,12 @@ final class ScooterCoordinator: ObservableObject {
     let filterViewModel = FilterViewModel()
     
     /// Indicator, if the filter is currently presented or not
-    @Published var presentFilter: Bool = false {
-        didSet {
-            guard !presentFilter else { return }
-            readTracksFromDatabase()
-        }
-    }
+//    @Published var presentFilter: Bool = false {
+//        didSet {
+//            guard !presentFilter else { return }
+//            readTracksFromDatabase()
+//        }
+//    }
     
     /// The current presented sheet, if there is any
     @Published var presentedSheet: MainViewSheets? = (UserDefaults.standard.accessToken?.isEmpty ?? true) ? .login : nil

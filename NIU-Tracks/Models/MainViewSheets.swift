@@ -13,6 +13,8 @@ enum MainViewSheets: Identifiable {
     case login
     /// Presents a sheet which shows the vehicle picker view
     case vehiclePicker
+    /// Presents a sheet which shows the filter to filter on tracks
+    case filter
     
     var id: Self { self }
 }

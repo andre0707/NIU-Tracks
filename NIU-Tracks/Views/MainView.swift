@@ -90,19 +90,20 @@ struct MainView: View {
                         
                         /// Show filter
                         Button(action: {
-                            scooterCoordinator.presentFilter = true
+                            scooterCoordinator.presentedSheet = .filter
+//                            scooterCoordinator.presentFilter = true
                         }, label: {
                             Label("Filter", systemImage: "slider.horizontal.3")
                                 .foregroundColor(.orange)
                                 .help("Filter")
                         })
-                        .popover(isPresented: $scooterCoordinator.presentFilter,
-                                 attachmentAnchor: .point(.bottom),
-                                 arrowEdge: .top) {
-                            
-                            FilterView(filterViewModel: scooterCoordinator.filterViewModel)
-                                .padding()
-                        }
+//                        .popover(isPresented: $scooterCoordinator.presentFilter,
+//                                 attachmentAnchor: .point(.bottom),
+//                                 arrowEdge: .top) {
+//                            
+//                            FilterView(filterViewModel: scooterCoordinator.filterViewModel)
+//                                .padding()
+//                        }
                      
                         Divider()
                         
@@ -151,6 +152,13 @@ struct MainView: View {
                 case .vehiclePicker:
                     VehiclePickerView()
                         .frame(minWidth: 600, idealWidth: 600, maxWidth: 600, minHeight: 300, idealHeight: 300, maxHeight: 400, alignment: .center)
+                    
+                case .filter:
+                    FilterView(filterViewModel: scooterCoordinator.filterViewModel)
+                        .padding()
+                        .onDisappear {
+                            scooterCoordinator.readTracksFromDatabase()
+                        }
                 }
             })
         

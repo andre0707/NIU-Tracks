@@ -13,6 +13,8 @@ struct FilterView: View {
     /// Reference to the view model which drives the view
     @ObservedObject var filterViewModel: FilterViewModel
     
+    @Environment(\.dismiss) private var dismiss
+    
     /// The body
     var body: some View {
         Form {
@@ -64,6 +66,16 @@ struct FilterView: View {
                           prompt: Text("Time in seconds"),
                           label: {
                     Toggle("Maximum riding time", isOn: $filterViewModel.isMaximumRidingTimeActive)
+                })
+            }
+            
+            HStack {
+                Spacer()
+                Button(action: {
+                    dismiss()
+                }, label: {
+                    Text("Ok")
+                        .frame(minWidth: 50)
                 })
             }
         }
